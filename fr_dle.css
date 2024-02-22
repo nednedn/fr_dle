@@ -1,0 +1,129 @@
+﻿body {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    color: darkseagreen;
+}
+h4 {
+    color: brown;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 36px;
+
+}
+
+.button {
+    transition-duration: 0.4s;
+
+    background-color: darkseagreen; 
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttonResults {
+    background-color: white;
+    color: black;
+    border: 2px solid darkseagreen;
+}
+
+.buttonResults:hover {
+    background-color: darkseagreen;
+    color: white;
+}
+
+#grid {
+    /*width is scaled according to word length*/
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.keyboardRow {
+    
+    width: 390px;
+    height: auto;
+    margin: auto;
+
+    display: flex;
+
+}
+
+.key {
+    width: 30px;
+    height: 40px;
+    border: 2px solid lightgray;
+    margin: 2.5px;
+
+    color: black;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialkey {
+    width: 49.5px;
+    height: 40px;
+    border: 2px solid lightgray;
+    margin: 2.5px;
+
+    color: black;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pressedKey {
+    color: white;
+    background-color: black;
+
+}
+
+.tile {
+    width: 55px;
+    height: 55px;
+    border: 2px solid lightgray;
+    margin: 2.5px;
+
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correctTile{
+    background-color: #6AAA64;
+    color: white;
+    border-color: white;
+}
+
+.partialTile{
+    background-color: goldenrod;
+    color: white;
+    border-color: white;
+}
+
+.incorrectTile{
+    background-color: #787C78;
+    color: white;
+    border-color: white;
+}
