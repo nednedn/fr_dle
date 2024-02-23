@@ -195,7 +195,7 @@ function processKeyPress(e) {
         }
         document.getElementById(rowTile.toString() + colTile.toString()).innerText = "";
     }
-    else if (e.code == "Enter") {
+    else if (e.code == "Enter" && colTile == length ) {
         checkGuess();
         rowTile += 1;
         colTile -= length; // before this just reset to 0, but this lets me remain at the same time after submitting a guess that is invalid (see colTile += length in checkGuess)
