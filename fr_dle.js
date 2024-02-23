@@ -229,13 +229,11 @@ function checkGuess() {
         attempt = attempt.concat(letter);
     }
     if (!guessbank.includes(attempt.toLowerCase())) {
-        var message = document.getElementById("winnerword");
-        message.innerHTML = "Ce mot n'est pas accepte&#769";
-        message.hidden = false;
+        var message = document.getElementById("wordwarning");
+        message.style.visibility = 'visible';
         setTimeout(function () {
-            message.innerText = "";
-            message.hidden = true;
-        }, 1000);
+            message.style.visibility = 'hidden';
+        }, 1500);
         rowTile -= 1;
         colTile += length;
         return;

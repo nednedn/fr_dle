@@ -127,3 +127,26 @@ h4 {
     color: white;
     border-color: white;
 }
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: brown;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
